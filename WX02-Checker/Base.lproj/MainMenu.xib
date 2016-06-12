@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WX02_Checker" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="XBt-8g-zcl" customClass="StatusMenuController" customModule="WX02_Checker" customModuleProvider="target">
+            <connections>
+                <outlet property="statusMenu" destination="rr4-r2-7S1" id="tjc-t9-t8X"/>
+                <outlet property="statusView" destination="SzZ-D8-280" id="EkE-sK-dQw"/>
+            </connections>
+        </customObject>
+        <menu id="rr4-r2-7S1">
+            <items>
+                <menuItem title="WX02 Status" id="roz-Pe-d32">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="KpP-TB-p23"/>
+                <menuItem title="Preferences…" id="KjK-Yx-ahc">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="preferencesClicked:" target="XBt-8g-zcl" id="cb7-c9-LUN"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="AeM-ah-VuX"/>
+                <menuItem title="Quit" id="mMJ-hs-Fhx">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="XBt-8g-zcl" id="0Q0-wH-WxJ"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-699.5" y="-1555.5"/>
+        </menu>
+        <customView id="SzZ-D8-280" customClass="WX02StatusView" customModule="WX02_Checker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tVc-u4-CLV">
+                    <rect key="frame" x="18" y="138" width="114" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="3 Days Traffic :" id="vxN-ul-ZPR">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPH-s8-QG2">
+                    <rect key="frame" x="18" y="25" width="114" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Wan Strength :" id="YeA-gp-oul">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3z-Jk-aOq">
+                    <rect key="frame" x="18" y="0.0" width="114" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Lan Type :" id="e92-aT-Ihb">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DTq-fL-pF4">
+                    <rect key="frame" x="138" y="84" width="12" height="12"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" drawsBackground="YES" id="ewk-cO-X84">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gmk-MH-r8f">
+                    <rect key="frame" x="138" y="106" width="12" height="12"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" drawsBackground="YES" id="EPZ-L4-U5Z">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7y5-wC-uq8">
+                    <rect key="frame" x="138" y="62" width="12" height="12"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" drawsBackground="YES" id="tPs-BH-bpf">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Mx-xC-IVt">
+                    <rect key="frame" x="175" y="138" width="124" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" id="66I-wu-mJq">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXH-3L-45H">
+                    <rect key="frame" x="156" y="105" width="80" height="14"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="2 Days Ago :" id="fo5-o2-Ag7">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFV-BD-dV5">
+                    <rect key="frame" x="229" y="105" width="70" height="14"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" id="Sgj-Wd-2UG">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BvN-0x-Ddc">
+                    <rect key="frame" x="229" y="83" width="70" height="14"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" id="Ab1-Ss-YaV">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aq1-Yj-Nef">
+                    <rect key="frame" x="229" y="61" width="70" height="14"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" id="NbZ-qx-Mnp">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-Ub-9PI">
+                    <rect key="frame" x="156" y="83" width="80" height="14"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="1 Day Ago :" id="5DX-Se-3bd">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="woR-mv-beE">
+                    <rect key="frame" x="156" y="61" width="80" height="14"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Today :" id="6k5-ch-ci6">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <levelIndicator verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBf-lO-iMk">
+                    <rect key="frame" x="138" y="23" width="61" height="18"/>
+                    <levelIndicatorCell key="cell" alignment="left" maxValue="5" warningValue="10" criticalValue="10" id="FQm-mK-xt0"/>
+                </levelIndicator>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1v-O2-tyU" customClass="TrafficChartView" customModule="WX02_Checker" customModuleProvider="target">
+                    <rect key="frame" x="32" y="50" width="80" height="80"/>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="taG-f8-CBM">
+                    <rect key="frame" x="136" y="0.0" width="100" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="6mf-MY-3NT">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VcM-pc-qly">
+                    <rect key="frame" x="205" y="26" width="100" height="14"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="dso-Be-CP9">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <connections>
+                <outlet property="lanTypeTextField" destination="taG-f8-CBM" id="k1H-hH-ko7"/>
+                <outlet property="oneDayAgoLabel" destination="DTq-fL-pF4" id="eIj-c9-kYe"/>
+                <outlet property="oneDayAgoTrafficColor" destination="DTq-fL-pF4" id="Abi-gj-AD8"/>
+                <outlet property="oneDayAgoTrafficTextField" destination="BvN-0x-Ddc" id="cm3-tk-s3E"/>
+                <outlet property="threeDaysTrafficTextField" destination="1Mx-xC-IVt" id="dB1-qo-AOy"/>
+                <outlet property="todayLabel" destination="7y5-wC-uq8" id="ckQ-Fm-l9y"/>
+                <outlet property="todayTrafficColor" destination="7y5-wC-uq8" id="nHL-l6-Mpp"/>
+                <outlet property="todayTrafficTextField" destination="Aq1-Yj-Nef" id="UHd-dv-ivi"/>
+                <outlet property="trafficChartView" destination="Z1v-O2-tyU" id="5dM-V9-ak8"/>
+                <outlet property="twoDaysAgoLabel" destination="Gmk-MH-r8f" id="AV4-uj-odH"/>
+                <outlet property="twoDaysAgoTrafficColor" destination="Gmk-MH-r8f" id="EdP-ii-CMe"/>
+                <outlet property="twoDaysAgoTrafficTextField" destination="oFV-BD-dV5" id="lqO-8K-Foi"/>
+                <outlet property="wanStrengthIndicator" destination="SBf-lO-iMk" id="v29-qA-f0T"/>
+                <outlet property="wanTypeTextField" destination="VcM-pc-qly" id="Eqp-Xs-Foq"/>
+            </connections>
+            <point key="canvasLocation" x="-646.5" y="-1332.5"/>
+        </customView>
+    </objects>
+</document>
